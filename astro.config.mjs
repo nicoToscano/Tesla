@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://nicotoscano.github.io',
-  base: '/tesla',
+  base: 'tesla',
   output: 'static',
 });

@@ -11,51 +11,34 @@ import Logo from "./Logo.astro";
   </div>
 
   <nav>
-    <ul class="flex text-sm">
+    <ul
+      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+    >
       <li>
-        <a
-          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
-          href="/tesla/#">Vehicles</a
-        >
+        <a href="/tesla/#">Vehicles</a>
       </li>
       <li>
-        <a
-          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
-          href="/tesla/#">Energy</a
-        >
+        <a href="/tesla/#">Energy</a>
       </li>
       <li>
-        <a
-          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
-          href="/tesla/#">Charging</a
-        >
+        <a href="/tesla/#">Charging</a>
       </li>
       <li>
-        <a
-          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
-          href="/tesla/#">Discover</a
-        >
+        <a href="/tesla/#">Discover</a>
       </li>
       <li>
-        <a
-          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
-          href="/tesla/#">Shop</a
-        >
+        <a href="/tesla/#">Shop</a>
       </li>
     </ul>
   </nav>
 
   <nav class="flex flex-grow basis-0 justify-end">
-    <ul class="flex text-sm">
-      <i
-        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-regular fa-circle-question"
-      ></i>
-      <i
-        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-solid fa-globe"
-      ></i>
-      <i
-        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-regular fa-circle-user"
-      ></i>
+    <ul
+      class="flex text-sm [&>i]:inline-block [&>i]:px-2 [&>i]:py-2 [&>i]:text-xl [&>i]:transition-colors [&>i]:duration-500"
+    >
+      <i class="fa-regular fa-circle-question"></i>
+      <i class="fa-solid fa-globe"></i>
+      <i class="fa-regular fa-circle-user"></i>
     </ul>
   </nav>
 
