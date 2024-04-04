@@ -11,24 +11,51 @@ import Logo from "./Logo.astro";
   </div>
 
   <nav>
-    <ul
-      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-bold [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
-    >
-      <li><a href="#">Vehicles</a></li>
-      <li><a href="#">Energy</a></li>
-      <li><a href="#">Charging</a></li>
-      <li><a href="#">Discover</a></li>
-      <li><a href="#">Shop</a></li>
+    <ul class="flex text-sm">
+      <li>
+        <a
+          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
+          href="#">Vehicles</a
+        >
+      </li>
+      <li>
+        <a
+          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
+          href="#">Energy</a
+        >
+      </li>
+      <li>
+        <a
+          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
+          href="#">Charging</a
+        >
+      </li>
+      <li>
+        <a
+          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
+          href="#">Discover</a
+        >
+      </li>
+      <li>
+        <a
+          class="transition-colors duration-500 text-current font-bold inline-block px-4 py-2"
+          href="#">Shop</a
+        >
+      </li>
     </ul>
   </nav>
 
   <nav class="flex flex-grow basis-0 justify-end">
-    <ul
-      class="flex text-sm [&>i]:font-bold [&>i]:inline-block [&>i]:px-2 [&>i]:py-2 [&>i]:text-xl [&>i]:transition-colors [&>i]:duration-500"
-    >
-      <i class="fa-regular fa-circle-question"></i>
-      <i class="fa-solid fa-globe"></i>
-      <i class="fa-regular fa-circle-user"></i>
+    <ul class="flex text-sm">
+      <i
+        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-regular fa-circle-question"
+      ></i>
+      <i
+        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-solid fa-globe"
+      ></i>
+      <i
+        class="font-bold inline-block px-2 py-2 text-xl transition-colors duration-500 fa-regular fa-circle-user"
+      ></i>
     </ul>
   </nav>
 
@@ -87,6 +114,6 @@ import Logo from "./Logo.astro";
     });
   }, observerOptions);
 
-  const $sections = document.querySelectorAll(".landing-section");
-  $sections.forEach((section) => observer.observe(section));
+  const sections = document.querySelectorAll(".landing-section");
+  sections.forEach((section) => observer.observe(section));
 </script>
