@@ -7,4 +7,5 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://nicotoscano.github.io',
   base: 'tesla',
+  outout: 'static',
 });
